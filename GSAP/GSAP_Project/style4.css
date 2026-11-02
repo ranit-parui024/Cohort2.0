@@ -8,4 +8,10 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: "Gilroy-Regular";
+  color: white;
+}
+
+#main {
+  position: relative;
+  background-color: black;
 }/*# sourceMappingURL=style4.css.map */
