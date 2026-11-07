@@ -1,4 +1,5 @@
-var tl = gsap.timeline();
+function loaderAnimation(){
+    var tl = gsap.timeline();
 
 tl.from(".line h1", {
     y: 170,
@@ -39,3 +40,15 @@ tl.from("#page1", {
     duration:1,
     ease:Power4,
 })
+};
+loaderAnimation(); // loader animation
+
+function crsrAnime(){
+    document.addEventListener("mousemove", function(dets){
+    gsap.to("#crsr", {
+        top:dets.y,
+        left:dets.x,
+    })
+})
+}; //cursur animation
+crsrAnime();
