@@ -17,16 +17,17 @@ body {
 // }
 
 // loader css code
-#crsr{
-    height: 2vw;
-    width: 2vw;
+#crsr {
+    height: 3vw;
+    width: 3vw;
     border-radius: 50%;
-    border: 1px solid white;
-    // background-color: white;
+    border: 0.8px solid rgb(161, 160, 160);
     mix-blend-mode: difference;
     position: fixed;
-    z-index: 99999;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
 }
+
 #loader {
     position: fixed;
     height: 100%;
@@ -49,7 +50,8 @@ body {
             align-items: center;
             justify-content: center;
             gap: 1vw;
-            h5{
+
+            h5 {
                 width: 4.95vw;
                 // background-color: red;
                 text-align: right;
@@ -58,7 +60,7 @@ body {
             h5,
             h6 {
                 font-size: 3.2vw;
-                font-family:"Silk Serif Light Italic";
+                font-family: "Silk Serif Light Italic";
                 font-weight: 90;
             }
         }
@@ -80,22 +82,26 @@ body {
         }
     }
 }
+
 @keyframes anime {
-    0%{
+    0% {
         font-family: 'Courier New', Courier, monospace;
         -webkit-text-stroke: 1px beige;
         opacity: 0;
     }
-    47%{
-        font-family:'Times New Roman', Times, serif;
+
+    47% {
+        font-family: 'Times New Roman', Times, serif;
         opacity: 1;
     }
-    75%{
+
+    75% {
         font-family: Georgia, 'Times New Roman', Times, serif;
         opacity: 0;
     }
-    100%{
-        font-family:"Silk Serif Light Italic" ;
+
+    100% {
+        font-family: "Silk Serif Light Italic";
         -webkit-text-stroke: 1px white;
         color: transparent;
         opacity: 1;
@@ -111,5 +117,61 @@ body {
         height: 100vh;
         width: 100%;
         background-color: #212020;
+
+        #nav {
+            padding: 2vw 6vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            #nav-part1 {
+                h1 {
+                    font-size: 2rem;
+                    font-weight: 900;
+                }
+            }
+
+            #nav-part2 {
+                display: flex;
+                align-items: center;
+                gap: 5vw;
+
+                h4 {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .intro-lines {
+            width: fit-content;
+            height: fit-content ;
+            margin-left: 30vw;
+            // background-color: red;
+            line-height: 6.4vw;
+            overflow: hidden;
+            display: flex;
+            align-items: center ;
+            position: relative;
+            z-index: 9999;
+
+            &:nth-child(2) {
+                margin-top: 10vh;
+            }
+
+            h1, h2 {
+                font-size: 4.7rem;
+                text-transform: uppercase;
+                font-weight:bolder;
+            }
+            h2{
+                &:hover{
+                    -webkit-text-stroke: 0.5px #fff;
+                    color: transparent;
+                }
+            }
+        }
     }
+
 }

@@ -13,13 +13,14 @@ body {
 }
 
 #crsr {
-  height: 2vw;
-  width: 2vw;
+  height: 3vw;
+  width: 3vw;
   border-radius: 50%;
-  border: 1px solid white;
+  border: 0.8px solid rgb(161, 160, 160);
   mix-blend-mode: difference;
   position: fixed;
-  z-index: 99999;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
 }
 
 #loader {
@@ -98,4 +99,48 @@ body {
   height: 100vh;
   width: 100%;
   background-color: #212020;
+}
+#main #page1 #nav {
+  padding: 2vw 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main #page1 #nav #nav-part1 h1 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+#main #page1 #nav #nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+}
+#main #page1 #nav #nav-part2 h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+#main #page1 .intro-lines {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 30vw;
+  line-height: 6.4vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+#main #page1 .intro-lines:nth-child(2) {
+  margin-top: 10vh;
+}
+#main #page1 .intro-lines h1, #main #page1 .intro-lines h2 {
+  font-size: 4.7rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+#main #page1 .intro-lines h2:hover {
+  -webkit-text-stroke: 0.5px #fff;
+  color: transparent;
 }/*# sourceMappingURL=style12.css.map */
