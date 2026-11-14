@@ -135,12 +135,64 @@ body {
 #main #page1 .intro-lines:nth-child(2) {
   margin-top: 10vh;
 }
-#main #page1 .intro-lines h1, #main #page1 .intro-lines h2 {
+#main #page1 .intro-lines h1,
+#main #page1 .intro-lines h2 {
   font-size: 4.7rem;
   text-transform: uppercase;
   font-weight: bolder;
 }
+#main #page1 .intro-lines h2 {
+  border-bottom: 0.5vw solid white;
+  padding-bottom: 0.4vw;
+  line-height: 7vw;
+  font-weight: 600;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
 #main #page1 .intro-lines h2:hover {
   -webkit-text-stroke: 0.5px #fff;
   color: transparent;
+  border-bottom-color: transparent;
+}
+#main #page2 {
+  padding-top: 12vh;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-color: #212020;
+}
+#main #page2 #video-container {
+  position: relative;
+  height: 66vh;
+  width: 71vw;
+  left: 27%;
+  background-color: red;
+}
+#main #page2 #video-container #video-crsr {
+  height: 8vw;
+  width: 8vw;
+  border-radius: 50%;
+  z-index: 99;
+  background-color: #FFA63D;
+  top: -17%;
+  left: 80%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main #page2 #video-container #video-crsr i {
+  font-size: 2vw;
+}
+#main #page2 #video-container img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main #page2 #video-container video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style12.css.map */
